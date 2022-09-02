@@ -22,25 +22,25 @@
             android:src="@drawable/logo" />
 
         <EditText
-            android:drawableEnd="@drawable/ic_baseline_email"
             android:id="@+id/edtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/borda"
-            android:hint="Insira nome do usuário"
-            android:inputType="textPersonName"
+            android:drawableEnd="@drawable/ic_baseline_email"
+            android:hint="Insira seu email"
+            android:inputType="textEmailAddress"
             android:maxLength="100"
             android:padding="20dp" />
 
         <EditText
-            android:drawableEnd="@drawable/ic_baseline_lock"
             android:id="@+id/edtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/borda"
-            android:hint="Insira senha do usuário"
+            android:drawableEnd="@drawable/ic_baseline_lock"
+            android:hint="Insira sua senha"
             android:inputType="textPassword"
             android:maxLength="100"
             android:padding="20dp" />
@@ -58,6 +58,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
+                android:background="@drawable/borda"
                 android:text="Entrar" />
 
             <Button
@@ -67,8 +68,17 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
+                android:background="@drawable/borda"
                 android:text="Sair" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtRecuperarSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:text="Recuperar Senha?" />
     </LinearLayout>
 
 </LinearLayout>
