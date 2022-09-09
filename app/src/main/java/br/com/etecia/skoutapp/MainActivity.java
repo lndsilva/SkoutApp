@@ -2,6 +2,7 @@ package br.com.etecia.skoutapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
                 //validando o usuario e senha
                 if (usuario.equals("etecia") && senha.equals("etecia")) {
+                    //abrimos a janela MenuPrincipal
+                    startActivity(new Intent(getApplicationContext(),
+                            MenuPrincipalActivity.class));
+                    finish();
 
                 } else {
                     Toast.makeText(getApplicationContext(),
