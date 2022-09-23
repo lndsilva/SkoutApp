@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnEntrar = findViewById(R.id.btnEntrar);
         btnSair = findViewById(R.id.btnSair);
 
+
         //criando a ação de botão sair
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override

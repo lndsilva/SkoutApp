@@ -14,13 +14,18 @@
         android:theme="@style/Theme.SkoutApp"
         tools:targetApi="31">
         <activity
+            android:name=".CardModeloActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MenuPrincipalActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
